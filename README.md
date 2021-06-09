@@ -13,6 +13,9 @@ There are two kinds of object detector:
 ![img_2.png](img_2.png)
 2. Two stage detector: Fast R-CNN
 ![img_1.png](img_1.png)
+   
+The basic architecture of two stage of includes region proposal network to feed region proposals into classifier and
+regressor.
 
 Reference:
 
