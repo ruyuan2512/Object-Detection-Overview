@@ -5,14 +5,14 @@ In this project, I will write a summary that my understanding is object detectio
 
 I. Overview
 
-Object detection is the task of classification and localization of object in an image or video. Object
+- Object detection is the task of classification and localization of object in an image or video. Object
 detectors need a powerful backbone network to extract rich.
 
-The goals of object detection is to recognise instances of a predefined set of object classes(people, cars, bikes,..) 
+- The goals of object detection is to recognise instances of a predefined set of object classes(people, cars, bikes,..) 
 and describe the locations of each detected object in the image using a bounding box. 
 features.
 
-There are two kinds of object detector:
+- There are two kinds of object detector:
 
 1. One stage detector: YOLO, SSD, RetinaNet
 ![img_2.png](img_2.png)
