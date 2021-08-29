@@ -42,6 +42,10 @@ There are three versions for YOLO. In this part, I will summary from YOLO V1 to 
     - Idea for object detection:
         + YOLO splits image into SxS 
 
+- YOLO V3
+
+   + YOLOv3 sử dụng darknet53 làm backbone( có 53 lớp chập). mỗi lớp sẽ bao gồm batch normalization layer và hàm kích hoạt Leaky ReLU. Không sử dụng pooling, và một lớp tích chập với stride 2 được sử dụng để downsample cái feature maps. Điều này giúp tránh khỏi mất mất của low-level features thường bị ảnh hưởng bởi pooling.
+
 what is Anchor box?
 
 Anchor boxes are a set of predefined bounding boxes of a certain height and width. These boxes are defined to capture the scale and aspect ratio of specific object classes you want to detect and are typically chosen based on object sizes in your training datasets. During detection, the predefined anchor boxes are tiled across the image. The network predicts the probability and other attributes, such as background, intersection over union (IoU) and offsets for every tiled anchor box. The predictions are used to refine each individual anchor box. You can define several anchor boxes, each for a different object size. Anchor boxes are fixed initial boundary box guesses.
